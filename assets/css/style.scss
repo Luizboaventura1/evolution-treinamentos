@@ -200,3 +200,52 @@ header {
     }
   }
 }
+
+.section-final {
+  background-color: #101011;
+
+  p {
+    color: #e2e2e2;
+  }
+
+  button {
+    background-color: $primary-color;
+    &:hover {
+      box-shadow: 0 0 15px rgba(223, 19, 67, 0.434);
+      background-color: rgb(225, 27, 73);
+    }
+  }
+
+  .container > div {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.faq {
+  background-color: #101011;
+
+  p {
+    color: $primary-color;
+  }
+
+  .box-accordion {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .accordion-container {
+    .accordion-single {
+      margin-bottom: 15px;
+      width: 100%;
+      height: 70px;
+      background-color: #19191c;
+      border: 1px solid #353539;
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        background-color: #232327;
+      }
+    }
+  }
+}
