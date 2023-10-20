@@ -57,23 +57,24 @@ header {
     img {
       width: 100%;
       max-width: 360px;
-      animation: mockupNotebook 3s linear infinite;
+      transform: translateY(0px);
+      animation: mockupNotebook 3s ease-in-out infinite;
     }
   }
 }
 
 @keyframes mockupNotebook {
-  0% {
-    margin-top: 0;
-  }
-
-  50% {
-    margin-top: -20px;
-  }
-
-  100% {
-    margin-top: 0;
-  }
+	0% {
+		transform: translateY(0px);
+	}
+        
+	50% {
+		transform: translateY(-20px);
+	}
+        
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 .logo {
